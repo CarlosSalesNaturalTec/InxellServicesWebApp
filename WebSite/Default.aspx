@@ -107,8 +107,9 @@
                         <i class="fa fa-4x fa-university text-primary sr-icons"></i>
                         <h3>Master</h3>
                         <p class="text-muted">GEDUM - Gestão Educacional</p>
-                    </div>
+                    </div>  
                 </div>
+              <!--
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-building-o text-primary sr-icons"></i>
@@ -123,6 +124,8 @@
                         <p class="text-muted">Gestor de Saúde</p>
                     </div>
                 </div>
+                -->
+
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-info text-primary sr-icons"></i>
