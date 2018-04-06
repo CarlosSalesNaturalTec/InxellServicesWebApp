@@ -14,9 +14,11 @@ function header() {
 
 function TentarLogin() {
 
+    document.getElementById("btLogin").style.cursor = "progress";
+
+
     var v1 = document.getElementById("inputUser").value;
     var v2 = document.getElementById("inputPwd").value;
-    document.getElementById("btLogin").style.cursor = "progress";
 
     $.ajax({
         type: "POST",
@@ -28,6 +30,10 @@ function TentarLogin() {
         failure: function () {
         }
     });
+
+    document.getElementById('inputUser').value = "";
+    document.getElementById('inputPwd').value = "";
+
 }
 
 function OnSuccess(response) {
@@ -45,10 +51,9 @@ function OnSuccess(response) {
             document.getElementById('lblMsgRetorno').innerText = "Acesso não permitido a este módulo.";
             document.getElementById('divRetornoSenha').style.display = "block";
             break;
+
         case "2":
-            document.getElementById('divLogin').style.display = "none";
-            document.getElementById('lblMsgRetorno').innerText = "Senha Incorreta.";
-            document.getElementById('divRetornoSenha').style.display = "block";
+            window.alert("SENHA OU USUARIO INCORRETO");
             break;
         default:
             window.location.href = response.d;

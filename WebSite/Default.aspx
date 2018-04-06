@@ -105,18 +105,19 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-university text-primary sr-icons"></i>
-                        <h3>Master</h3>
-                        <p class="text-muted">GEDUM - Gestão Educacional</p>
+                        <h3>GEDUM - Gestão Educacional</h3>
+                        <p class="text-muted"></p>
                     </div>  
                 </div>
-              <!--
+              
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-building-o text-primary sr-icons"></i>
-                        <h3>Operacional</h3>
-                        <p class="text-muted">Ponto Biométrico</p>
+                        <i class="fa fa-4x fas fa-thumbs-up text-primary sr-icons"></i>
+                        <h3>Ponto Biométrico</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
+                        <!--
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-user text-primary sr-icons"></i>
@@ -128,9 +129,9 @@
 
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-info text-primary sr-icons"></i>
-                        <h3>Suporte</h3>
-                        <p class="text-muted">Estacionamento Digital</p>
+                        <i class="fa fa-4x fas fa-car text-primary sr-icons"></i>
+                        <h3>Estacionamento Digital</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
             </div>
