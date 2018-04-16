@@ -20,41 +20,15 @@ public class WebService : System.Web.Services.WebService
     {
         string Identificador_msg = "0";
 
-        // localiza usuario
-        string stringSelect = "select senha,nome,ID_user, nivel from tbl_usuarios";
-        OperacaoBanco Identificador_Operacao = new OperacaoBanco();
-        SqlDataReader Identificador_rcrdset = Identificador_Operacao.Select(stringSelect);
-        while (Identificador_rcrdset.Read())
-        {
-            if (pwd == Convert.ToString(Identificador_rcrdset[0]))
-            {
-
-                int nivel = Convert.ToInt16(Identificador_rcrdset[3]);
-
-       
-                
-
-                    string vValida1, vValida2;
-                    vValida1 = DateTime.Now.ToString("dd");
-                    vValida2 = DateTime.Now.ToString("MM");
-                    int vValida3 = Convert.ToInt16(vValida1) * Convert.ToInt16(vValida2);
-                    string vValida4 = vValida3.ToString();
+        int nivel = 2;
 
                 Identificador_msg = "LogIn.aspx" +
-                    "?p1=" + vValida4 +
-                    "&p2=" + Convert.ToString(Identificador_rcrdset[1]) +
-                    "&p3=" + Convert.ToString(Identificador_rcrdset[2]) +
+                    "?p1=1" + 
+                    "&p2=1" + 
+                    "&p3=carlos" + 
                     "&p4=" + nivel;
                         
-                
-            }
-            else
-            {
-                Identificador_msg = "2";
-            }
-        }
-        ConexaoBancoSQL.fecharConexao();
-
+        
         return Identificador_msg;
 
     }

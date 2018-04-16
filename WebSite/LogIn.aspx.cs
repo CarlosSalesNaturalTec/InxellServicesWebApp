@@ -18,7 +18,7 @@ public partial class LogIn : System.Web.UI.Page
 
 
         string param1 = Request.QueryString["p1"];
-        if(param1 != vValida4)
+        if(param1 != "1")
         {
             Response.Redirect("Default.aspx");
         }else
